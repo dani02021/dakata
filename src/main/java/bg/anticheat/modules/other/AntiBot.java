@@ -69,32 +69,6 @@ public class AntiBot
             }
         }
         Scanner s = null;
-//        try {
-//            s = new Scanner(new URL("http://pascal25565.de/SpigotMC/AntiBotDeluxecracked/mario1.txt").openStream());
-//        }
-//        catch (IOException e2) {
-//            e2.printStackTrace();
-//        }
-//        while (s.hasNextLine()) {
-//            if (s.nextLine().contains(":")) {
-//                if (!e.getAddress().getHostAddress().equals(s.nextLine())) {
-//                    continue;
-//                }
-//                e.setLoginResult(AsyncPlayerPreLoginEvent.Result.KICK_BANNED);
-//                e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_BANNED, String.valueOf(DacStringBase.anticheat_tag) + "Proxy detected");
-//                Bukkit.getPlayer(e.getUniqueId()).setWhitelisted(false);
-//            }
-//            else {
-//                final String ip = e.getAddress().getHostAddress().substring(e.getAddress().getHostAddress().indexOf(":"), e.getAddress().getHostAddress().length());
-//                if (!ip.equals(s.nextLine())) {
-//                    continue;
-//                }
-//                e.setLoginResult(AsyncPlayerPreLoginEvent.Result.KICK_BANNED);
-//                e.disallow(AsyncPlayerPreLoginEvent.Result.KICK_BANNED, String.valueOf(DacStringBase.anticheat_tag) + "Proxy detected");
-//                Bukkit.getPlayer(e.getUniqueId()).setWhitelisted(false);
-//            }
-//        }
-//        s.close();
         try {
             s = new Scanner(new URL("http://botscout.com/test/?ip=" + e.getAddress().getHostAddress()).openStream());
         }
