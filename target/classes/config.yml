@@ -1,0 +1,470 @@
+###################################
+#Dakata Anti-Cheat                #
+#                                 #
+#Created by dani02 and kkkeeeddd  #
+#                                 #
+#Config by DomMinesDiamonds       #
+#                                 #
+###################################
+#
+#Prefix
+anticheat-tag: "&8&l[&3&lDAC&8&l] &7"
+#Here is the no permissions message
+#You may customize it to all your needs.
+non-permission: "You don't have permission !"
+
+#Here is the broadcast message.
+#When someone gets kicked for hacking it
+#broadcasts it to the public.
+broadcast-msg: "<player> was kicked for
+using <hack>!"
+
+#The message when someone is using hack
+hack-msg: "<player> may use <hack> in world <world>, ping = <ping>, tps = <tps>"
+
+#ASCII message, as in characters
+ascii-msg: ASCII Characters are not allowed!
+
+#Here is the kick message.
+kick-msg: "<hack> detected!"
+
+#Here is the warn message when
+#it detects the player hacking
+warn-msg: "Please turn off <hack>!"
+#Logger
+Log:
+   File:
+      enabled: true
+      message: "[%y%/%m%/%d%: %h%:%mm%:%s%] [DAC]"
+#This message pops up when the player is
+#spamming and it asks him/her to stop.
+antispam-msg: "Stop spamming or will be kicked"
+
+#Here is the swear message when a player
+#is swearing.
+swear-msg: Please stop swearing
+
+#The message when someone has been kicked
+#for spaming
+spam-kick-msg: You have been kicked for spamming
+
+#Advertising message, when the player
+#advertises it tells them to stop,
+#and it does not send the message to
+#the public.
+ad-msg: Please stop advertising
+
+#Block cmd message, when the player
+#try to use command that is in
+#blocked-cmd, this message will be
+#sended to the player
+block-cmd-msg: Unknown command. Type "/help" for help.
+
+#The delay between each messages
+#for a player.
+chat-per-second: 1
+
+#The delay of each command
+#the player may do.
+command-per-second: 1
+
+#If this is enabled, it will log
+#hackers in console.
+log-console: true
+
+#Sends a message to the players with the permission
+#Dakata.Admin that they are hacking.
+log-player: true
+
+#Will there be a message when someone is
+#kicked by DAC
+broadcast-kick: true
+
+#Check for a update
+update-check: true
+
+#Check time(in minutes)
+update-check-time: 60
+
+#If you are using Bungee, then set it to true
+bungee-mode: false
+
+#Delay value
+#What must be the minimum delay between the messages when someone is hacking(in ticks)
+#1 second = 20 ticks, 2 seconds = 40 ticks and etc.
+min-delay: 30
+
+#If the player ping is larger than this it
+#will disable checks for the player
+#RECOMMENDED: Under 200
+#Write -1 to disable it
+max-player-ping: -1
+
+#Violation reset time(seconds)
+violation-reset-time: 30
+
+#How many click can a player do per second.
+#RECOMMENDED: Under 18 and below 30
+clicks-per-second: 20
+
+#Start Protection checks
+
+#If this is enabled it will make sure that there
+#are no bots joining.
+AntiBot:
+   enabled: true
+
+#Should DAC enable world downloading
+#It's a mod that allows you to download maps from the server.
+WorldDownloader:
+   enabled: true
+   command: "kick <player> WorldDownloader"
+
+#Should DAC enable chat check
+Chat:
+   Swear:
+      enabled: true
+      swearwords:
+      - fuck
+      - fck
+      - bitch
+      - b!tch
+      - nigga
+      - n!gga
+      - asshole
+      - ass
+      - dick
+      - pussy
+      - penis
+   Advertising:
+      IP:
+        enabled: true
+      Web:
+        enabled: true
+   Spam:
+      enabled: true
+   CAPS:
+      enabled: true
+
+#Should DAC command chat check
+Command:
+   ASCII:
+      enabled: true
+   Spam:
+      enabled: true
+   blocked-cmd:
+      - pl
+      - plugins
+      - "bukkit:plugins"
+      - version
+      - "bukkit:version"
+
+#Should DAC enable chat check
+Sign:
+   ASCII:
+      enabled: true
+#Should DAC enable nocknockback check
+NoKnockback:
+   enabled: true
+   threshold:
+        1: "kick <player> NoKnockback"
+
+#Should DAC enable fastplace check
+FastPlace:
+   enabled: true
+   threshold:
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> FastPlace"
+
+#Should DAC enable nobreakdelay check
+NoBreakDelay:
+   enabled: true
+   threshold:
+      100: "kick <player> NoBreakDelay"
+
+#Should DAC enable nuker check NOT WORKING
+Nuker:
+   enabled: true
+
+#Should DAC enable autosign check
+AutoSign:
+   enabled: true
+   threshold:
+      10: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> AutoSign"
+
+#Should DAC enable  blocks out of sync check
+InvalidBlock:
+   Break:
+      enabled: true
+   Place:
+      enabled: true
+   Interact:
+      enabled: true
+   threshold:
+      100: "kick <player> InvalidBlock"
+
+#Should DAC enable noslowdown for food check
+NoSlowdown:
+   Food:
+      enabled: true
+   threshold:
+      100: "kick <player> NoSlowdown"
+
+#Should DAC enable reach check
+Reach:
+   Block:
+      Break:
+        enabled: true
+   Attack:
+       enabled: true
+   threshold:
+      100: "kick <player> Reach"
+
+#Should DAC enable throw check
+Throw:
+   Egg:
+      enabled: true
+   Snowball:
+      enabled: true
+   threshold:
+      100: "kick <player> Throw"
+
+#Should DAC enable regen check
+#Food level is the level of the food of the player when use regen
+Regen:
+   enabled: true
+   threshold:
+      100: "kick <player> Regen"
+
+#Should DAC enable invalidpotion check
+InvalidPotion:
+   enabled: true
+   threshold:
+      100: "kick <player> InvalidPotion"
+
+#Should DAC enable cheststeal checks
+ChestSteal:
+   enabled: true
+   threshold:
+      100: "kick <player> ChestSteal"
+
+#Should DAC enable fasteat check
+FastEat:
+   enabled: true
+   threshold:
+      100: "kick <player> FastEat"
+
+#Should DAC enable fastbow check
+FastBow:
+   enabled: true
+   threshold:
+      100: "kick <player> FastBow"
+
+#Should DAC enable waterwalk check
+WaterWalk:
+   enabled: true
+   threshold:
+      1: "kick <player> WaterWalk"
+
+#Should DAC enable phase check, NOT WORKING
+Phase:
+   enabled: false
+
+#Should DAC enable nofall check
+NoFall:
+   enabled: true
+   threshold:
+      100: "kick <player> NoFall"
+
+#Should DAC enable invalidmove check
+InvalidMove:
+   enabled: true
+   threshold:
+      100: "kick <player> InvalidMove"
+
+#Should DAC enable highjump check
+HighJump:
+   enabled: true
+   threshold:
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> HighJump"
+
+#Should DAC enable headless check
+Headless:
+   enabled: true
+   threshold:
+      100: "kick <player> Headless"
+
+#Should DAC enable fly check
+Fly:
+   enabled: true
+   threshold:
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> Fly"
+  
+#Should DAC enable NoSwing check
+NoSwing:
+   Block:
+      Damage:
+         enabled: true
+         threshold:
+            100: "kick <player> NoSwing"
+
+#Should DAC enable ScaffoldWalk check
+ScaffoldWalk:
+   enabled: true
+   threshold:
+      1: "kick <player> ScaffoldWalk"
+
+#Should DAC enable invalidinventory(AutoSoup, AutoArmor, InvWalk) check
+InvalidInventory:
+   enabled: true
+   threshold:
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> InvalidInventory"
+
+#Should DAC enable fastladder check
+FastLadder:
+   enabled: true
+   threshold:
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> FastLadder"
+
+#Should DAC enable fastfall check
+FastFall:
+   enabled: true
+   threshold:
+      100: "kick <player> FastFall"
+
+#Should DAC enable anticactus check
+AntiCactus:
+   enabled: true
+   threshold:
+      1: "kick <player> AntiCactus"
+
+#Should DAC enable extraelytra check
+ExtraElytra:
+   enabled: true
+   threshold:
+      100: "kick <player> ExtraElytra"
+
+#Should DAC enable boatfly check
+BoatFly:
+   enabled: true
+   threshold:
+      100: "kick <player> BoatFly"
+
+#Should DAC enable multiaura check
+MultiAura:
+   enabled: true
+
+#Should DAC enable glide check
+Glide:
+   enabled: true
+   threshold:
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> Glide"
+
+#Should DAC enable speed check
+Speed:
+   enabled: true
+   threshold:
+      10: "dakata freeze <player> 6 You have been frozen for 6 seconds because of speed hacking, please stay for a while"
+      25: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> Speed"
+
+#Should DAC enable killaura check
+KillAura:
+   enabled: true
+   playersOnly: true
+   threshold:
+      15: "tempban <player> 3d You have been banned for 3 days because using too much hacks\n You can appeal at <replaceWithYourForum>"
+      100: "kick <player> KillAura"
+
+#Should DAC enable criticals check
+#function must be "divide" - to divide the damage by 1.5(non critical) or "cancel" to cancel it
+Criticals:
+   enabled: true
+   function: "cancel"
+   threshold:
+      100: "kick <player> Criticals"
+
+#Should DAC enable imposibleattack check
+ImposibleAttack:
+   enabled: true
+   threshold:
+      100: "kick <player> ImposibleAttack"
+
+#Should DAC enable badpackets check
+BadPackets:
+   enabled: true
+
+#Should DAC enable healthtag check
+HealthTag:
+   enabled: true
+
+#Should DAC enable tabcomplete check
+TabComplete:
+   enabled: false
+   message: "You can't use TabComplete"
+
+#Should DAC enable timer check NOT WORKING
+Timer:
+   enabled: false
+
+#Should DAC enable illegalmove check
+#WARNING: DONT SET THAT TO UNDER 10VL
+IllegalMove:
+   enabled: true
+   threshold:
+      15: "kick <player> IllegalMove"
+
+#Should DAC enable maxinteracts check
+MaxInteracts:
+   enabled: true
+   threshold:
+      1: "kick <player> MaxInteracts"
+
+#Should DAC enable slimejump check
+SlimeJump:
+   enabled: true
+   threshold:
+      100: "kick <player> SlimeJump"
+
+MoreMoves:
+    enabled: false
+    threshold:
+       8: "kick <player> Blink"
+
+WaterY:
+    enabled: true
+    threshold:
+       35: "kick <player> Jesus"
+
+CreativeDrop:
+    enabled: true
+
+InvalidVelocity:
+    enabled: true
+    threshold:
+       20: "kick <player> InvalidVelocity"
+
+#Stop Protection Checks
+
+disable-in-worlds:
+- world12
+
+disable-in-residence-areas:
+- res_area
+
+disable-in-worldguard-areas:
+- worldguard-area
+
+
+#PlaceHolders
+#<hack>
+#<player>
+#<world>
+#<ping>
+#<tps>

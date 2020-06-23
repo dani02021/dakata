@@ -1,0 +1,14 @@
+name: DakataAntiCheat
+version: BETA 1.2
+authors: [dani02, kkkeeeddd]
+main: bg.anticheat.dakata.Main
+depend: [ProtocolLib]
+softdepend: [PlaceholderAPI, mcMMO, Residence, EggWars]
+commands:
+   dakata:
+      description: DakataAntiCheat help command
+      aliases: [dak, dakataanticheat, daka]
+   dac:
+      description: DakataAntiCheat GUI
+   report:
+      description: Dakata report command

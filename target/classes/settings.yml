@@ -1,0 +1,170 @@
+###################################
+#Dakata Anti-Cheat                #
+#                                 #
+#Created by dani02 and kkkeeeddd  #
+#                                 #
+#Config by DomMinesDiamonds       #
+###################################
+#
+#Settings
+
+#MultiAura
+#How many entityes can a player hit for the same time
+max-hit-entityes: 2
+
+#NoKnockback
+#How many times a player should
+#not move when being attacked to be detected for NoKnockback
+min-noknockback-moves: 3
+
+#Min knockback distance per attack
+min-noknockback-distance: 0.2
+
+#NoBreakDelay
+#Min time before breaking blocks
+#for NoBreakDelay in miliseconds
+min-pre-break-time: 150
+
+#Nuker
+#Min time before last block break(in ticks)
+#20 ticks = 1 second, 10 ticks = 1/2 second
+min-break-blocks-time: 2
+
+#Fastplace
+#Min time per each block place(in ticks)
+min-block-time: 2
+
+#AutoSign
+#Min time before before place and change sign(in ticks)
+min-sign-change-time: 600
+
+#InvalidMove
+#Max distace while lagging
+max-lagg-distance: 6.0
+
+#Reach
+#Min distace from the player and the hitted entity
+max-attack-distance: 4.8
+
+#Min distace from the player and the breaked block
+max-block-distance: 6.6
+
+#AntiCactus
+#Max moves without take damage from cactus
+max-cactus-moves: 3
+
+#Glide
+#When the violation is more that the minimal, it will back the hacker
+min-glide-violation: 10
+
+#Max glide speed
+max-glide-speed: 0.6
+
+#Headless
+#Max head pitch
+max-player-pitch: 90
+
+#HighJump
+#Max jump distance
+max-highjump-distance: 0.60
+
+#Max jump distance with potion
+max-highjump-potion-distance: 0.63
+
+#FastLadder
+#Max ladder speed
+ladder-speed: 0.12
+
+#SprintBackwards
+#mode 1: More protection, more false positives, mode 2: Less protection, less false positives
+sprint-backwards-mode: 2
+
+#Speed
+#Walk speed
+walk-speed: 0.51
+
+#Sprint speed
+sprint-speed: 0.88
+
+#Sneaking speed
+sneak-speed: 0.215
+
+#Ice speed
+ice-speed: 0.75
+
+#Water speed
+water-speed: 0.137
+
+#Lava speed
+lava-speed: 0.08
+
+#Item speed
+item-speed: 0.16
+
+#Soulsand speed
+soulsand-speed: 0.26
+
+#Soulsand ice speed
+soulsand-ice-speed: 0.17
+
+#Cobweb speed
+cobweb-speed: 0.044
+
+#Jump speed(multiply)
+#If sprint speed is 2 and jump speed is 3,
+#the max speed will be 6
+jump-multiply-speed: 1.8
+
+#Stair speed(multiply)
+#If sprint speed is 2 and stair speed is 3,
+#the max speed will be 6
+stair-multiply-speed: 1.5
+
+#Slab speed(multiply)
+#If sprint speed is 2 and slab speed is 3,
+#the max speed will be 6
+slab-multiply-speed: 1.5
+
+#Min speed violation
+#When the violation is more that the minimal, it will back the hacker
+min-speed-violation: 10
+
+#Jesus
+#Max moves under water
+max-water-moves: 6
+
+#ChestInventory
+#Min time before next item(milliseconds)
+min-chest-item-time: 100
+
+#Regen
+#Min time before next regen(ticks)
+min-regen-time: 13
+
+#Min time before next regen in 1.10(ticks)
+min-one-ten-regen-time: 7
+
+#Max Interacts
+#How many times can the player click for one second
+max-interacts-per-second: 25
+
+#Throw
+#Time before check
+#Like if the time is 20 ticks(1 second)(in ticks)
+#If the player do more throws that max-throws for the time, will be kicked
+throw-time: 5
+
+#Max throws for time
+max-throws: 3
+
+#Timer
+#Max sent packets for packets-time(ticks)
+max-packets: 80
+#Which means 80 is the max sended packet for 60 ticks(3 seconds)
+packets-time: 60
+#WARN: If the packets-time is more then the max-packets need to be more
+
+#MoreMoves
+#Max sent moves for 1/6 second
+#RECOMENDED: 15+ - For no lag servers, 30+ - For not so much lag servers, 50+ for much lag servers
+max-moves: 20
